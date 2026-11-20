@@ -1,0 +1,13 @@
+@startuml
+
+    class Matricula{
+
+        -fecha: LocalDate
+        -notaFinal: double
+        -estado: String
+
+        +calcularEstado(): String
+
+    }
+
+@enduml

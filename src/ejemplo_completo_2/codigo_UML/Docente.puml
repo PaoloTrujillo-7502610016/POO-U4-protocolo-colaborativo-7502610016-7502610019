@@ -1,0 +1,8 @@
+@startuml
+    class Docente{
+        -numeroContrato: String
+
+        +calificar(): void
+        
+    }
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+    class Asignatura{
+        -codigo: String
+        -nombre: String
+        -creditos: int
+    }
+@enduml
