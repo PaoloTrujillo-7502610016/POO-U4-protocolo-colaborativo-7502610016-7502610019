@@ -4,4 +4,6 @@
         -nombre: String
         
     }
+    Facultad "1" *-- "1..*" Programa :Pertenece a
+
 @enduml

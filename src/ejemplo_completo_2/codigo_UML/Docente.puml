@@ -5,4 +5,7 @@
         +calificar(): void
         
     }
+
+    Docente "0..*"--"0..*" Asignatura :orienta
+
 @enduml

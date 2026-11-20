@@ -4,4 +4,7 @@
         -nombre: String
         
     }
+
+    Programa "1" o-- "0..*" Estudiante
+
 @enduml

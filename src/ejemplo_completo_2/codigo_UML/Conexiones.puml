@@ -1,8 +1,0 @@
-@startuml
-
-class Persona
-class Estudiante
-
-Persona <|-- Estudiante : Es una
-
-@enduml

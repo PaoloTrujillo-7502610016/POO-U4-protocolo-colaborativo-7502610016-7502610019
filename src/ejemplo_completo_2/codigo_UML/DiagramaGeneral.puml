@@ -1,0 +1,12 @@
+@startuml
+
+' Importar las clases
+!include Persona.puml
+!include Estudiante.puml
+!include Docente.puml
+!include Facultad.puml
+!include Programa.puml
+!include Asignatura.puml
+!include Matricula.puml
+
+@enduml
