@@ -1,0 +1,13 @@
+@startuml
+
+abstract class Persona{
+
+    -documento: String
+    -nombre: String
+    -correo: String
+
+    +getNombre(): String
+
+}
+
+@enduml

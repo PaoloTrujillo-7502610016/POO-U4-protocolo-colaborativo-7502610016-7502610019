@@ -1,4 +1,4 @@
-package ejemplo_completo_2;
+package ejemplo_completo_2.codigo_java;
 
 public class Main {
 
