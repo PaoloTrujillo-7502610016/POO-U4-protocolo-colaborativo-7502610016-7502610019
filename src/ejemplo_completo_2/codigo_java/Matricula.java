@@ -7,6 +7,8 @@ public class Matricula {
     private LocalDate fecha;
     private double notaFinal;
     private String estado;
+    private Estudiante estudiante;
+    private Asignatura asignatura;
 
     public String calcularEstado() {
         return "";

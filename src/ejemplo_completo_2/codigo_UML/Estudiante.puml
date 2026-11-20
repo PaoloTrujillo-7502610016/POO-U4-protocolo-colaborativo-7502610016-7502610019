@@ -3,4 +3,7 @@
         -codigo: String
 
     }
+
+    Estudiante "1" -- "0.." Matricula
+
 @enduml

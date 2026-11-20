@@ -2,6 +2,7 @@
 
 abstract class Persona{
 
+
     -documento: String
     -nombre: String
     -correo: String
@@ -9,5 +10,8 @@ abstract class Persona{
     +getNombre(): String
 
 }
+
+Persona <|-- Estudiante : Es una
+Persona <|-- Docente : Es una
 
 @enduml

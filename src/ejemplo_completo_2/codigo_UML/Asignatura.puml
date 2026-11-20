@@ -4,4 +4,7 @@
         -nombre: String
         -creditos: int
     }
+
+    Asignatura "1" -- "0.." Matricula
+
 @enduml
