@@ -20,12 +20,17 @@ public class Main {
                 "ptrujilloa@unicartagena.edu.co",
                 "7502610016");
 
+        List<Estudiante> estudiantes = new ArrayList<>();
+        estudiantes.add(estudiante1);
+
 
         /*Instancia de la clase Asignatura*/
         Asignatura asignatura1 = new Asignatura(
                 "Programacion Orientada a Objetos",
                 "1002546",
                 30);
+        List<Asignatura> asignaturas = new ArrayList<>();
+        asignaturas.add(asignatura1);
 
         /*Isntancia de la clase Docente*/
         Docente docente1 = new Docente(
@@ -33,6 +38,8 @@ public class Main {
                 "80001254",
                 "jlara@unicartagena.com",
                 "2026-2");
+        List<Docente> docentes = new ArrayList<>();
+        docentes.add(docente1);
 
         /*Instancia de la clase Matricula*/
         Matricula matricula1= new Matricula(
@@ -57,6 +64,8 @@ public class Main {
                 "Facultad de Ingenieria",
                 "456-123");
         facultad1.agregarPrograma(programa1);
+        List<Facultad> facultades = new ArrayList<>();
+        facultades.add(facultad1);
 
         /*Mostrar informacion de los objetos*/
         System.out.println("\nDatos del estudiante:\n");
@@ -64,6 +73,7 @@ public class Main {
         System.out.println("Documento: " + estudiante1.getDocumento());
         System.out.println("Email: " + estudiante1.getEmail());
         System.out.println("Codigo: " + estudiante1.getCodigo());
+        System.out.println("El estudiante "+estudiante1.getNombre()+" esta matriculado al curso de "+asignatura1.getNombre());
 
         System.out.println("\nDatos de la asignatura:\n");
         System.out.println("Nombre: " + asignatura1.getNombre());
@@ -78,13 +88,14 @@ public class Main {
         System.out.println("\nDatos del docente:\n");
         System.out.println("Nombre: " + docente1.getNombre());
         System.out.println("Contrato: " + docente1.getNumeroContrato());
+        System.out.println("Asignatura encargada: " + asignatura1.getNombre());
         docente1.calificar();
 
         System.out.println("\nEstructura academica:\n");
         System.out.println("Facultad: " + facultad1.getNombre());
         System.out.println("Programa: " + programa1.getNombre());
-        System.out.println("Total de estudiantes del programa: "+programa1.getEstudiantes().size());
-        System.out.println("Total de programas de la facultad: "+facultad1.getProgramas().size());
+        System.out.println("Total de estudiantes del programa: "+estudiantes.size());
+        System.out.println("Total de programas de la facultad: "+facultades.size());
 
 
     }

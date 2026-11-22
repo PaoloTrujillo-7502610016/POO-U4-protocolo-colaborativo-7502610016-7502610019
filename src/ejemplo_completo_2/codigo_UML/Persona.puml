@@ -5,7 +5,7 @@ abstract class Persona{
 
     -documento: String
     -nombre: String
-    -correo: String
+    -email: String
 
     +getNombre(): String
 
