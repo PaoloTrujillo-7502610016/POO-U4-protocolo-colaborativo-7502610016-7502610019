@@ -17,12 +17,10 @@ public class Matricula {
     public Matricula(
             LocalDate fecha,
             double notaFinal,
-            String estado,
             Estudiante estudiante,
             Asignatura asignatura) {
         this.fecha = fecha;
         this.notaFinal = notaFinal;
-        this.estado = estado;
         this.estudiante = estudiante;
         this.asignatura = asignatura;
     }

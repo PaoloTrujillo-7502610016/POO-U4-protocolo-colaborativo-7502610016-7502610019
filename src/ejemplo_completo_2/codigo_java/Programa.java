@@ -12,6 +12,9 @@ public class Programa {
         this.codigo=codigo;
         this.estudiantes=new ArrayList<>();
     }
+    public String getNombre() {
+        return nombre;
+    }
 
     /*Agregacion: */
     private List<Estudiante> estudiantes;

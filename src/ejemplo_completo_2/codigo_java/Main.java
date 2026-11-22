@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("***Desarrollado por Paolo***");
+        System.out.println("\n*** SISTEMA ACADEMICO ***\n");
         // construye los objetos (instancias de las clases)
         // utiliza los objetos para invocar los métodos
         // Trata que el programa sea funcional.
@@ -38,7 +38,6 @@ public class Main {
         Matricula matricula1= new Matricula(
                 LocalDate.of(2026,11,10),
                 4.5,
-                "Aprobada",
                 estudiante1,asignatura1);
 
         /*Asociaciones de clases*/
@@ -59,8 +58,33 @@ public class Main {
                 "456-123");
         facultad1.agregarPrograma(programa1);
 
+        /*Mostrar informacion de los objetos*/
+        System.out.println("\nDatos del estudiante:\n");
+        System.out.println("Nombre: " + estudiante1.getNombre());
+        System.out.println("Documento: " + estudiante1.getDocumento());
+        System.out.println("Email: " + estudiante1.getEmail());
+        System.out.println("Codigo: " + estudiante1.getCodigo());
 
+        System.out.println("\nDatos de la asignatura:\n");
+        System.out.println("Nombre: " + asignatura1.getNombre());
+        System.out.println("Codigo: " + asignatura1.getCodigo());
+        System.out.println("Creditos: " + asignatura1.getCreditos());
 
+        System.out.println("\nDatos de la matricula:\n");
+        System.out.println("Fecha: " + matricula1.getFecha());
+        System.out.println("Nota final: " + matricula1.getNotaFinal());
+        System.out.println("Estado: " + matricula1.calcularEstado());
+
+        System.out.println("\nDatos del docente:\n");
+        System.out.println("Nombre: " + docente1.getNombre());
+        System.out.println("Contrato: " + docente1.getNumeroContrato());
+        docente1.calificar();
+
+        System.out.println("\nEstructura academica:\n");
+        System.out.println("Facultad: " + facultad1.getNombre());
+        System.out.println("Programa: " + programa1.getNombre());
+        System.out.println("Total de estudiantes del programa: "+programa1.getEstudiantes().size());
+        System.out.println("Total de programas de la facultad: "+facultad1.getProgramas().size());
 
 
     }

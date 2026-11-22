@@ -28,9 +28,13 @@ public class Asignatura {
     public String getNombre() {
         return nombre;
     }
+    public int getCreditos() {
+        return creditos;
+    }
     public List<Matricula> getMatriculas() {
         return matriculas;
     }
+
 
 
     /*Asociacion muchos a muchos: */

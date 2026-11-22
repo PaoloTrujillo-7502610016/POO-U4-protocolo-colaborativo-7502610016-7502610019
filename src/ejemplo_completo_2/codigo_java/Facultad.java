@@ -13,6 +13,9 @@ public class Facultad {
         this.codigo = codigo;
         this.programas = new ArrayList<>();
     }
+    public String getNombre() {
+        return nombre;
+    }
 
 
     /*Composicion: */

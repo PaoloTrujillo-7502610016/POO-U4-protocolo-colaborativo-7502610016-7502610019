@@ -12,6 +12,10 @@ public class Docente extends Persona {
         this.asignaturas = new ArrayList<>();
     }
 
+    public String getNumeroContrato() {
+        return numeroContrato;
+    }
+
     public void calificar(){
         System.out.println("El docente "+getNombre()+" ha calificado");
     }
