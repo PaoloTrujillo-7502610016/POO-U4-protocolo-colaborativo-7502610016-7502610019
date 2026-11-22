@@ -7,6 +7,11 @@ public class Programa {
     private String nombre;
     private String codigo;
 
+    public Programa(String nombre, String codigo) {
+        this.nombre=nombre;
+        this.codigo=codigo;
+        this.estudiantes=new ArrayList<>();
+    }
 
     /*Agregacion: */
     private List<Estudiante> estudiantes;

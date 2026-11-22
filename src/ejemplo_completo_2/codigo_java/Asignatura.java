@@ -1,5 +1,6 @@
 package ejemplo_completo_2.codigo_java;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Asignatura {
@@ -7,10 +8,41 @@ public class Asignatura {
     private String codigo;
     private int creditos;
 
+    /*Cosntructor: */
+    public Asignatura(String nombre, String codigo, int creditos) {
+        this.nombre = nombre;
+        this.codigo = codigo;
+        this.creditos = creditos;
+        this.matriculas = new ArrayList<>();
+    }
+
     private List<Matricula> matriculas; /*Asociacion*/
     //Una asignatura puede tener 0 a muchas matriculas
+    public void agregarMatricula(Matricula matricula) {
+        matriculas.add(matricula);
+    }
+    public String getCodigo() {
+        return codigo;
+    }
+    public String getNombre() {
+        return nombre;
+    }
+    public List<Matricula> getMatriculas() {
+        return matriculas;
+    }
 
-    private List<Docente> docentes; /*Asociacion*/
-    //Una asignatura puede tener 0 o muchos docentes
+
+    /*Asociacion muchos a muchos: */
+    private List<Docente> docentes;
+    public Asignatura(){
+        docentes = new ArrayList<>();
+    }
+    public void agregarDocente(Docente docente){
+        docentes.add(docente);
+    }
+    public List<Docente> getDocentes() {
+        return docentes;
+    }
+
 
 }

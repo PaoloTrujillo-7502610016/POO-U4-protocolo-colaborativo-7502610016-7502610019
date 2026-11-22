@@ -1,5 +1,6 @@
 package ejemplo_completo_2.codigo_java;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Docente extends Persona {
@@ -7,7 +8,16 @@ public class Docente extends Persona {
 
     public void calificar(){}
 
-    private List<Asignatura> asignaturas;/*Asignatura*/
-    //Un docente puede orientar 0 o muchas asignaturas
+    /*Asociacion muchos a muchos: */
+    private List<Asignatura> asignaturas;
+    public Docente(){
+        asignaturas = new ArrayList<>();
+    }
+    public void agregarAsignatura(Asignatura asignatura){
+        asignaturas.add(asignatura);
+    }
+    public List<Asignatura> getAsignaturas() {
+        return asignaturas;
+    }
 
 }

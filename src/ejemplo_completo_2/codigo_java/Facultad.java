@@ -8,6 +8,12 @@ public class Facultad {
     private  String nombre;
     private String codigo;
 
+    public Facultad(String nombre, String codigo) {
+        this.nombre = nombre;
+        this.codigo = codigo;
+        this.programas = new ArrayList<>();
+    }
+
 
     /*Composicion: */
     private List<Programa> programas;

@@ -6,8 +6,10 @@ public abstract class Persona {
     private String documento;
     private String email;
 
-    public String getNombre() {
-        return nombre;
+    public Persona(String nombre, String documento, String email) {
+        this.nombre = nombre;
+        this.documento = documento;
+        this.email = email;
     }
 
 }
