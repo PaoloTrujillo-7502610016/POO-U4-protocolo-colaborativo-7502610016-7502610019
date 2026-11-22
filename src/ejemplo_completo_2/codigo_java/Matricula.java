@@ -44,7 +44,12 @@ public class Matricula {
     }
 
     public String calcularEstado() {
-        return "";
+        if (notaFinal >= 3.0) {
+            estado = "Aprobado";
+        } else {
+            estado = "Reprobado";
+        }
+        return estado;
     }
 
 }

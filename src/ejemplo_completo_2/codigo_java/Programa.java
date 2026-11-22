@@ -15,9 +15,6 @@ public class Programa {
 
     /*Agregacion: */
     private List<Estudiante> estudiantes;
-    public Programa(){
-        estudiantes = new ArrayList<>();
-    }
     public void agregarEstudiante(Estudiante estudiante){ /*Metodo para agregar nuevo estudiante a la lista de Estudiantes*/
         estudiantes.add(estudiante);
     }

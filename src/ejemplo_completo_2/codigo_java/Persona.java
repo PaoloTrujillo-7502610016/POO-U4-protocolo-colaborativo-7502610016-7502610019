@@ -12,4 +12,14 @@ public abstract class Persona {
         this.email = email;
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+    public String getDocumento() {
+        return documento;
+    }
+    public String getEmail() {
+        return email;
+    }
+
 }

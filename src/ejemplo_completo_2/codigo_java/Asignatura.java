@@ -14,6 +14,7 @@ public class Asignatura {
         this.codigo = codigo;
         this.creditos = creditos;
         this.matriculas = new ArrayList<>();
+        this.docentes = new ArrayList<>();
     }
 
     private List<Matricula> matriculas; /*Asociacion*/
@@ -34,9 +35,6 @@ public class Asignatura {
 
     /*Asociacion muchos a muchos: */
     private List<Docente> docentes;
-    public Asignatura(){
-        docentes = new ArrayList<>();
-    }
     public void agregarDocente(Docente docente){
         docentes.add(docente);
     }

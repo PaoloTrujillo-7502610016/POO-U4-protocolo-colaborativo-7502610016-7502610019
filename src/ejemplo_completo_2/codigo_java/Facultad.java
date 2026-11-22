@@ -17,10 +17,7 @@ public class Facultad {
 
     /*Composicion: */
     private List<Programa> programas;
-    public Facultad(Programa programa) {
-        programas = new ArrayList<>();
-        programas.add(programa);
-    }
+
     public void agregarPrograma(Programa programa) {
         programas.add(programa);
     }
