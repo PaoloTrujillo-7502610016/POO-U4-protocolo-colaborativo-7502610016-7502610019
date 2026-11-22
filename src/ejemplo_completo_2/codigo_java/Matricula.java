@@ -7,11 +7,15 @@ public class Matricula {
     private LocalDate fecha;
     private double notaFinal;
     private String estado;
-    private Estudiante estudiante;
-    private Asignatura asignatura;
 
     public String calcularEstado() {
         return "";
     }
+
+    private Estudiante estudiante; /*Asociacion*/
+    //Una matricula corresponde a un estudiante
+
+    private Asignatura asignatura; /*Asociacion*/
+    //Una matricula tiene una asignatura
 
 }

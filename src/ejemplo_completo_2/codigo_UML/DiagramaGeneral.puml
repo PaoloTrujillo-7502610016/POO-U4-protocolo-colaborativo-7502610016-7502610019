@@ -1,6 +1,6 @@
 @startuml
 
-' Importar las clases
+' Importar todas las clases a un solo grafico
 !include Persona.puml
 !include Estudiante.puml
 !include Docente.puml
