@@ -94,8 +94,8 @@ public class Main {
         System.out.println("\nEstructura academica:\n");
         System.out.println("Facultad: " + facultad1.getNombre());
         System.out.println("Programa: " + programa1.getNombre());
-        System.out.println("Total de estudiantes del programa: "+estudiantes.size());
-        System.out.println("Total de programas de la facultad: "+facultades.size());
+        System.out.println("Total de estudiantes del programa: "+programa1.getEstudiantes().size());
+        System.out.println("Total de programas de la facultad: "+facultad1.getProgramas().size());
 
 
     }

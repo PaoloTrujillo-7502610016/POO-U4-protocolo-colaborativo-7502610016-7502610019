@@ -16,7 +16,9 @@ public class Facultad {
     public String getNombre() {
         return nombre;
     }
-
+    public String getCodigo() {
+        return codigo;
+    }
 
     /*Composicion: */
     private List<Programa> programas;
