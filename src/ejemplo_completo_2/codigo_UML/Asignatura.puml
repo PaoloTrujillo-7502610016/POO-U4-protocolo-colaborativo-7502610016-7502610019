@@ -5,6 +5,6 @@
         -creditos: int
     }
 
-    Asignatura "1" -- "0.." Matricula
+    Asignatura "1" -- "0..*" Matricula
 
 @enduml

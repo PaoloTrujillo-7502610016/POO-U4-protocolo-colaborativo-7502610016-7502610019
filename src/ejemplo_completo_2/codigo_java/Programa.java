@@ -15,6 +15,9 @@ public class Programa {
     public String getNombre() {
         return nombre;
     }
+    public String getCodigo() {
+        return codigo;
+    }
 
     /*Agregacion: */
     private List<Estudiante> estudiantes;

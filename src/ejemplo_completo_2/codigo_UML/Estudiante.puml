@@ -4,6 +4,6 @@
 
     }
 
-    Estudiante "1" -- "0.." Matricula
+    Estudiante "1" -- "0..*" Matricula
 
 @enduml
